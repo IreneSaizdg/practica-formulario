@@ -107,7 +107,7 @@
             <br><br>
 
             <!-- Color de la bicicleta: color -->
-            <label for="color">Color de la bicicleta:</label>
+            <label for="color">Color de la bicicleta:</label><br>
             <input type="color" id="color" name="color">
             <br><br>    
             
@@ -116,9 +116,9 @@
             <input type="range" id="rangodeprecio" name="rangodeprecio" min="0" max="100">
             <br><br>                 
 
-            <!-- Tipo de bicicleta: selector -->
-            <label for="tipodebicicleta">Tipo de bicicleta:</label>
-            <select id="tipodebicicleta" name="tipodebicicleta">
+            <!-- Tipo de bicicleta: selector -->-
+            <label for="tipodebicicleta">Tipo de bicicleta:</label><br>
+            <select id="tipodebicicleta" name="tipodebicicleta"> 
                 <optgroup label="Urbana"> 
                     <option value="clasica">Bicicleta Clásica</option>
                     <option value="plegable">Bicicleta Plegable</option>
@@ -141,18 +141,46 @@
             <br><br> 
   
             <!-- Accesorios: selector multiple -->
-            <label for="marcas">¿Qué marca era?:</label>   
+            <label for="accesorios">Accesorios:</label> <br>  
             <select id="accesorios" name="accesorios" multiple size="3">
+                <option>Ruedines</option>
+                <option>Hinchadores</option>
+                <option>Rodillos</option>
+                <option>Bomba de aire</option>
+                <option>Alforja</option>
+                <option>Silla portabebés</option>
+              </select>
+              <br><br>
 
             <!-- ¿Qué marca era?: Lista de datos -->
-            <label for="marcas">¿Qué marca era?:</label>
-            <input list="marcas" id="marcas" name="marcas" />
-
-            <datalist id="marcas">
-              <option value="Chocolate"></option>
+            <label for="marca">¿Qué marca era?:</label><br>
+            <input type="text" name="marca" id="marca" list="listademarcas" />
+            <datalist id="listademarcas">
+                <option value="specialized"></option>
+                <option value="trek"></option>
+                <option value="merida"></option>
+                <option value="scott"></option>
+                <option value="giant"></option>
+                <option value="cube"></option>
+                <option value="lapierre"></option>
+                <option value="orbea"></option>
+                <option value="cannondale"></option>
+                <option value="bmc"></option>
+                <option value="canyon"></option>
+                <option value="look"></option>
+                <option value="protek"></option>
+                <option value="megamo"></option>
+                <option value="pinarello"></option>
+                <option value="bianchi"></option>
+                <option value="bh"></option>
+                <option value="factor"></option>
+                <option value="ghost"></option>
+                <option value="cervélo"></option>
+                <option value="argon"></option>
             </datalist>
-    
+            <br><br>
         </fieldset>
+        <br>
 
     <input type="submit" value="Enviar">
     
